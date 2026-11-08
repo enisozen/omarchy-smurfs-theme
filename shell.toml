@@ -1,0 +1,124 @@
+# Omarchy shell surfaces for Sirinler (The Smurfs) theme
+
+[bar]
+background       = "#0a1628"
+background-alpha = 0.84
+text             = "#f0f7ff"
+active           = "#0095ff"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28
+
+[hyprland]
+active-border            = "rgba(0095ffee) rgba(38e8ffee) rgba(ffffffdd) 45deg"
+active-border-foreground = "#f0f7ff"
+
+[controls]
+normal-color              = "#f0f7ff"
+normal-fill-alpha         = 0.08
+normal-border             = "#7fa6d6"
+normal-border-width       = 1
+normal-border-alpha       = 0.38
+
+hover-cursor-color        = "#ffffff"
+hover-cursor-fill-alpha   = 0.18
+hover-cursor-border       = "#38e8ff"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.75
+
+focus-color               = "#ffffff"
+focus-fill-alpha          = 0.18
+focus-border              = "#0095ff"
+focus-border-width        = 1
+focus-border-alpha        = 0.75
+
+selected-color            = "#ffffff"
+selected-fill-alpha       = 0.28
+selected-border           = "#38e8ff"
+selected-border-width     = 1
+selected-border-alpha     = 0.90
+
+pressed-fill-alpha        = 0.35
+selection-fill-alpha      = 0.48
+
+[popups]
+background       = "#0a1628"
+background-alpha = 0.88
+text             = "#f0f7ff"
+border           = "hyprland.active-border"
+border-alpha     = 0.92
+
+[tooltip]
+background       = "#0a1628"
+background-alpha = 0.92
+text             = "#f0f7ff"
+border           = "hyprland.active-border-foreground"
+border-alpha     = 0.85
+
+[notifications]
+background       = "#0a1628"
+background-alpha = 0.90
+text             = "#f0f7ff"
+border           = "hyprland.active-border"
+border-alpha     = 0.95
+countdown        = "#0095ff"
+
+[launcher]
+background                = "#0a1628"
+background-alpha          = 0.88
+text                      = "#f0f7ff"
+border                    = "hyprland.active-border-foreground"
+border-alpha              = 0.90
+scrim                     = "#060e1a"
+scrim-alpha               = 0.55
+selected-background       = "#0095ff"
+selected-background-alpha = 0.26
+selected-text             = "#ffffff"
+selected-border           = "hyprland.active-border"
+selected-border-alpha     = 0.80
+
+[menu]
+background                = "#0a1628"
+background-alpha          = 0.88
+text                      = "#f0f7ff"
+border                    = "hyprland.active-border-foreground"
+border-alpha              = 0.90
+scrim                     = "#060e1a"
+scrim-alpha               = 0.55
+selected-background       = "#0095ff"
+selected-background-alpha = 0.26
+selected-text             = "#ffffff"
+selected-border           = "hyprland.active-border"
+selected-border-alpha     = 0.80
+
+[polkit]
+background       = "#0a1628"
+background-alpha = 0.92
+text             = "#f0f7ff"
+text-error       = "#ff3b5c"
+border           = "hyprland.active-border"
+border-error     = "#ff3b5c"
+border-alpha     = 1.0
+scrim            = "#060e1a"
+scrim-alpha      = 0.60
+accent           = "#0095ff"
+
+[lock]
+background       = "#0a1628"
+background-alpha = 0.80
+text             = "#f0f7ff"
+placeholder      = "#6488b4"
+text-error       = "#ff3b5c"
+border           = "hyprland.active-border"
+border-active    = "hyprland.active-border"
+border-error     = "#ff3b5c"
+border-alpha     = 1.0
+selection        = "#0095ff"
+selection-alpha  = 0.50
+
+[image-picker]
+text                    = "#f0f7ff"
+selected-border         = "#38e8ff"
+selected-border-alpha   = 1.0
+unselected-border       = "#f0f7ff"
+unselected-border-alpha = 0.35
