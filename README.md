@@ -1,64 +1,68 @@
-# 🍄 Şirinler (The Smurfs) Theme for Omarchy Linux
+# 🍄 The Smurfs Theme for Omarchy Linux
 
-**Büyülü Şirin Köyü** atmosferini **Omarchy (Hyprland)** masaüstünüze taşıyan özel tasarım tema paketi. Canlı Şirin mavisi, büyülü orman gece laciverti ve altın sarısı vurgu renkleriyle tüm sistem yüzeylerini, **Hakkında (About)** logosunu, **Kilidi Aç (Unlock)** ekranını ve **Ekran Koruyucuyu (Screensaver)** özelleştirir.
+A magical **Smurf Village** desktop theme for **[Omarchy](https://omarchy.org) (Hyprland)**. Crafted with vibrant Smurf blue (`#0095ff`), glowing potion cyan (`#38e8ff`), enchanted midnight forest navy (`#0a1628`), and golden starlight (`#ffd60a`) accents across all desktop surfaces, including a custom **About Logo**, **Unlock Screen**, and **Animated Screensaver**.
 
-![Tema Önizlemesi](preview.png)
+> 🇹🇷 Türkçe dokümantasyon için: **[BENIOKU.md](BENIOKU.md)**
 
-![Kilidi Aç Ekranı Önizlemesi](preview-unlock.png)
+![Theme Preview](preview.png)
 
----
-
-## ✨ Neler İçerir?
-
-- 🎨 **Tam Sistem Renk Paleti (`colors.toml` & `shell.toml`)**: Hyprland pencere kenarlıkları, buzlu cam (frosted glass) üst bar, bildirimler, uygulama başlatıcı (launcher), terminal emülatörleri (Alacritty, Ghostty, Foot, Kitty), Neovim ve VS Code uyumu.
-- ℹ️ **Şirinler Hakkında Logosu (`about.txt`)**: `Super + Space -> Hakkında` (`omarchy-launch-about` / `fastfetch`) ekranında yalnızca Şirinler teması etkinken görünen 54x25 özel Şirinler ASCII amblemi (başka bir temaya geçildiğinde otomatik olarak varsayılan Omarchy logosuna döner).
-- 🔒 **Kilidi Aç Ekranı (`unlock.png` & `preview-unlock.png`)**: `Stil -> Kilidi Aç` (`omarchy-plymouth-switcher`) menüsünden seçilebilen, mantar ev ve Şirin şapkası amblemli yüksek çözünürlüklü kilit/açılış ekranı.
-- 🌌 **Şirinler Ekran Koruyucu (`screensaver.txt`)**: Omarchy'nin `ttfx` tabanlı animasyonlu ekran koruyucusu için özel **ŞİRİNLER • BÜYÜLÜ ŞİRİN KÖYÜ** ASCII sanatı.
-- 🖼️ **4 Özel Duvar Kağıdı (`backgrounds/`)**:
-  1. `01-sirinler-koyu.jpg` — Büyülü Şirin Köyü
-  2. `02-gozluklu-sirin-ajan.jpg` — Gözlüklü Şirin Ajan
-  3. `03-sirinler-buyulu-orman-gece.jpg` — Büyülü Orman Gece
-  4. `04-sirin-baba-laboratuvar.jpg` — Şirin Baba'nın İksir Laboratuvarı
-- 📊 **Btop Teması (`btop.theme`)**: Şirin mavisi, camgöbeği ve iksir moru geçişli sistem izleyici teması.
+![Unlock Screen Preview](preview-unlock.png)
 
 ---
 
-## 🚀 Kurulum
+## ✨ What's Included
 
-### Yöntem 1: Tam Kurulum (Önerilen — Hakkında Logosu, Ekran Koruyucu ve Kancalar Dahil)
+- 🎨 **Full System Palette (`colors.toml` & `shell.toml`)**: Harmonized colors for Hyprland window borders, frosted-glass top bar, notifications, app launcher, terminals (Alacritty, Ghostty, Foot, Kitty), Neovim, and VS Code.
+- ℹ️ **Custom About Logo (`about.txt`)**: A 54×25 block-ASCII mushroom house & **THE SMURFS** emblem displayed in `Super + Space -> About` (`omarchy-launch-about` / `fastfetch`). With the bundled `theme-set` hook, this custom About logo appears **only** while The Smurfs theme is active and automatically restores the stock Omarchy icon when switching to other themes.
+- 🔒 **Custom Unlock Screen (`unlock.png` & `preview-unlock.png`)**: High-resolution transparent Plymouth/SDDM emblem and 1080p switcher preview featuring a glowing mushroom house, classic Smurf hat, and neon typography.
+- 🌌 **Animated Screensaver (`screensaver.txt`)**: Custom **THE SMURFS • MAGICAL SMURF VILLAGE** ASCII banner for Omarchy's `ttfx` (Terminal Text Effects) screensaver.
+- 🖼️ **4 High-Resolution Wallpapers (`backgrounds/`)**:
+  1. `01-sirinler-koyu.jpg` — Magical Smurf Village
+  2. `02-gozluklu-sirin-ajan.jpg` — Agent Brainy Smurf
+  3. `03-sirinler-buyulu-orman-gece.jpg` — Enchanted Forest at Night
+  4. `04-sirin-baba-laboratuvar.jpg` — Papa Smurf's Alchemy Lab
+- 📊 **Btop Theme (`btop.theme`)**: Matching Smurf blue, cyan, and potion-magenta gradients for system monitoring.
+
+---
+
+## 🚀 Installation
+
+### Option 1: Full Installation (Recommended — Includes About Logo, Screensaver & Auto-Sync Hook)
 
 ```bash
-git clone https://github.com/enisozen/omarchy-sirinler-theme.git
-cd omarchy-sirinler-theme
-./kur.sh
+git clone https://github.com/enisozen/omarchy-smurfs-theme.git
+cd omarchy-smurfs-theme
+./install.sh
 ```
 
-### Yöntem 2: Omarchy Tema Yöneticisi ile Kurulum
+*(For Turkish installer, run `./kur.sh`)*
+
+### Option 2: Via Omarchy Theme Manager
 
 ```bash
-omarchy theme install https://github.com/enisozen/omarchy-sirinler-theme
+omarchy theme install https://github.com/enisozen/omarchy-smurfs-theme
 ```
 
-Hakkında logosu ve ekran koruyucuyu da etkinleştirmek için:
+To also apply the custom About logo and Screensaver banner manually:
 
 ```bash
-cp ~/.config/omarchy/themes/sirinler/about.txt ~/.config/omarchy/branding/about.txt
-cp ~/.config/omarchy/themes/sirinler/screensaver.txt ~/.config/omarchy/branding/screensaver.txt
+cp ~/.config/omarchy/themes/smurfs/about.txt ~/.config/omarchy/branding/about.txt
+cp ~/.config/omarchy/themes/smurfs/screensaver.txt ~/.config/omarchy/branding/screensaver.txt
 ```
 
 ---
 
-## 🔒 Kilidi Aç (Plymouth / SDDM) Ekranını Etkinleştirme
+## 🔒 Enabling the Unlock Screen (Plymouth / SDDM)
 
-Omarchy menüsünden (`Super + Space`):
-1. **Stil (Style) > Kilidi Aç (Unlock)** menüsünü açın ve listeden **`sirinler`** seçeneğini seçin.
-2. Veya terminalden doğrudan uygulayın:
+From the Omarchy Menu (`Super + Space`):
+1. Open **Style > Unlock** (`omarchy-plymouth-switcher`) and select **`smurfs`** (or **`sirinler`**).
+2. Or apply directly from the terminal:
    ```bash
-   omarchy-plymouth-set-by-theme sirinler
+   omarchy-plymouth-set-by-theme smurfs
    ```
 
 ---
 
-## 📄 Lisans
+## 📄 License
 
 MIT © [Enis Özen](https://github.com/enisozen)
